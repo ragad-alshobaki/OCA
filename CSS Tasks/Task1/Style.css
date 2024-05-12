@@ -1,0 +1,70 @@
+.n1 {
+    color: red;
+}
+.n2 {
+    color: green;
+}
+.n3 {
+    color: blue;
+}
+.n4 {
+    color: yellow;
+}
+/*------------------------------------------------------- 2*/
+.CF {
+    color: dodgerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+.pink {
+    color: pink;
+    font-size: 16px;
+}
+.Yell {
+    color: yellow;
+    font-size: 3rem;
+}
+/*------------------------------------------------------- 3*/
+.h1 {
+    color: yellow;
+    background-color: blue;
+}
+.s1 {
+    color: red;
+    font-weight: bold;
+}
+.s2 {
+    color: #3d8bf2;
+    font-style: italic;
+}
+.img {
+    height: 100;
+    width: 150;
+    border-radius: 8px;
+}
+.sub {
+    color: green;
+}
+#link {
+    
+}
+/*------------------------------------------------------- 4*/
+.bg {
+    background-color: blue;
+    color: white;
+}
+.bimg {
+    background-image: url(depositphotos_624211840-stock-photo-computer-coding-which-can-easily.jpg);
+    border: 1px solid black;
+}
+/*------------------------------------------------------- 5*/
+.verbg {
+    background-image: url(v-repeat-y.jpg);
+    background-image: width;               /* need to change the width*/
+    background-repeat: repeat-y;
+}
+/*------------------------------------------------------- 6*/
+.h {
+    background-color: black;
+    color: white;
+}
