@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+    grid-template-columns:repeat(4, 100px);
+    column-gap: 100px;
+}
+.itm {
+    background-color: cadetblue;
+    height: 150px;
+    width: 150px;
+}
+/* ----------------------------------------- 2*/
+.txtgrid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.txtitm {
+    height: 200px;
+    width: 200px;
+}
+/* ----------------------------------------- 3*/
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header';
+    grid-template-areas: 'Menu hmain main main right right';
+}
+.item1 {
+    grid-area: header;
+    background-color: aqua;
+}
+.item2 {
+    grid-area: menu;
+    background-color: blueviolet;
+}

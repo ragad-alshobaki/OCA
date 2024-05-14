@@ -1,0 +1,16 @@
+.bcolor {
+    background-color: blueviolet;
+}
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+.fb {
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+}
+/* ------------------------------------------- 2*/
+.nav {
+    display: flex;
+}

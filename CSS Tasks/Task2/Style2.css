@@ -1,0 +1,9 @@
+.b1 {
+    border-top-style: solid;
+}
+.b2 {
+    border: 0;
+}
+.b3 {
+    border-bottom-style: solid;
+}

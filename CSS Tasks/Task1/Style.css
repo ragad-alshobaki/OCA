@@ -68,3 +68,13 @@
     background-color: black;
     color: white;
 }
+/*------------------------------------------------------- 8*/
+.pimg1 {
+    background-image: url(minimalist-brown-grid-pinterest-aesthetic-xe0ro1ogg3yhaj00.jpg);
+    color: white;
+}
+.pimg2 {
+    background-image: url(minimalist-brown-grid-pinterest-aesthetic-xe0ro1ogg3yhaj00.jpg) url(Capture.PNG);
+    background-position: left top, right top;
+    background-repeat: no-repeat, repeat;                          /* Need to check*/
+}
