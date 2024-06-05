@@ -45,16 +45,26 @@ function printColor (colors) {
 printColor(colors);
 
 //6th exercise
-function getlength () {
-
+function getlength (char) {
+    let counter = 0;
+    for (i in char) {
+        counter++ ;
+    }
+    return counter;
 }
+console.log(getlength('Hello'));
+console.log(getlength('JavaScript'));
 
 //7th exercise
 function getupper (string) {
-    string.toUpperCase();
-    console.log(string)
+    return string.toUpperCase();
 }
-getupper('hello');
-getupper('world');
+console.log(getupper('hello '), getupper('world!'))
 
 //8th exercise
+function countchar (sentence, delimiter) {
+    // let txt = sentence;
+    // let arr = txt.split(",");
+    return sentence.split(delimiter);
+    console.log(countchar("'Hello,World', ',"))
+}
