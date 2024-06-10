@@ -10,34 +10,33 @@ sayHello("Alice");
 sayHello("Bob");
 
 //2nd exercise
-const squarefunc = function (x) {return x ** x};
-const z = squarefunc(2);
-console.log(z);
+const square = function (x) {return x ** 2};
+
+console.log("square of 2 is", square(2));
+console.log("square of 5 is", square(5));
 
 //3rd exercise
-// const multiply = (x, y) => (return x * y);            //ES6 - check not working
-const multiply = function(x, y) {                       //ES5
-    return x * y;
-}
+const multiply = (x, y) => x * y;               //ES6
+// const multiply = function(x, y) {            //ES5
+//     return x * y; }
 console.log(multiply(2, 3));
 console.log(multiply(4, 5));
 
 //4th exercise
 const car = {
-    Make : "Mercedes",
-    Model : "C-Class",
-    Year : 2022, 
+    Make : "Toyota",
+    Model : "Camry",
+    Year : 2020, 
     getCarInfo:  function() {
         return this.Make + "" + this.Model + "" + this.Year;}
+        // return console.dir(car); }                           //display the obj. in tree format
 }
-// function getCarInfo (car) {
     console.log(car.Make);  
     console.log(car.getCarInfo())
-// }
 
 //5th exercise
 let colors = ["Red", "Green", "Blue"];
-function printColor (colors) {
+function printColor() {
     for (i in colors) {
         console.log(colors[i])
     }
@@ -45,7 +44,7 @@ function printColor (colors) {
 printColor(colors);
 
 //6th exercise
-function getlength (char) {
+function getlength(char) {
     let counter = 0;
     for (i in char) {
         counter++ ;
@@ -61,10 +60,16 @@ function getupper (string) {
 }
 console.log(getupper('hello '), getupper('world!'))
 
-//8th exercise
-function countchar (sentence, delimiter) {
+// //8th exercise
+// let x = "Hello,World";
+// console.log(x.split(""))
+function splitStr (sentence, delimiter) {
     // let txt = sentence;
     // let arr = txt.split(",");
     return sentence.split(delimiter);
-    console.log(countchar("'Hello,World', ',"))
 }
+console.log(splitStr('Hello,World', ',')); 
+console.log(splitStr('JavaScript is fun', ' ')); 
+// console.log(splitStr("Hello,World", ""))
+
+

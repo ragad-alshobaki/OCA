@@ -1,7 +1,7 @@
 //1st exercise
 const pi = 3.14;
 function calculateArea(radius) {
-    return area = pi * radius **2;
+    return area = pi * radius *2;
 }
 console.log(calculateArea(5));
 console.log(calculateArea(10));

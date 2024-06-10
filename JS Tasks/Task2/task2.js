@@ -47,10 +47,10 @@ if(score <= 50) {
 var Name = prompt("What is your name?")
 console.log("Hello, ", Name)
 
-//9th exercise                                   ***Check - not working
+//9th exercise                                                            ***Check - error - Friday is not defined
 // var day = [Friday, Saturday, Sunday, Monday, Tuseday, Wednsday, Thersday]
-// for (let i in day; i++) {
-//     if (day = Friday && day = Saturday) {
+// for (let i in day, i++) {
+//     if (day == Friday && day == Saturday); {
 //         console.log(day, "It's a weekend")
 //     }
 // }
