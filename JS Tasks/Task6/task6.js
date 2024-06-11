@@ -7,7 +7,7 @@ if (typeof(Storage) !== undefined) {
     document.getElementById("locStorage").innerHTML = "Sorry, your browser does not support Web Storage...";
 }
 
-//2nd req.
+// //2nd req.
 if (typeof(Storage) == undefined) {
     document.getElementById("locNumStrg").innerHTML = "Sorry, your browser does not support Web Storage...";
 } else {
@@ -16,11 +16,35 @@ if (typeof(Storage) == undefined) {
 }
 
 //3rd req.
-if (typeof(Storage) !== undefined) {
-    localStorage.setItem("Boolean", true)
-    document.getElementById("bolStrg").innerHTML = localStorage.getItem("Boolean")
-} else {
-    document.getElementById("bolStrg").innerHTML = "Sorry, your browser not support Web Storage..."
-}
+localStorage.setItem("bool", true)
+localStorage.getItem("bool")
 
 //4th req.
+// if (typeof(Storage) == undefined) {
+//     document.getElementById("removable").innerHTML = "your browser doesn't support Web Storage";
+// } else {
+    // function removeTxt(){
+    //     localStorage.removeItem()
+    // }
+    // document.getElementById("remBtn").onclick
+// }
+localStorage.setItem("color", "Orange")
+localStorage.getItem("color")
+localStorage.removeItem("color")
+
+//5th req.
+// localStorage.clear()
+
+//6th req.
+localStorage.setItem("Company", "OCA")
+if (localStorage.getItem("Company")) {
+    document.write("Welcome")
+} else {
+    document.write("Unknown User")
+}
+
+//7th req.
+localStorage.setItem("Arr", [1, 2, 3])              //chech Json to handel Array****
+localStorage.getItem("Arr")
+
+//8th req.
