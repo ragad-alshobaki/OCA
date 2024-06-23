@@ -60,5 +60,37 @@ let getStr = n.map(i => i.toString())
 console.log("Task.10 Output:", getStr);
 
 //Task#11
-let dub = [1, 1, 2, 3, 3, 4, 4]
-let getUnique = dub.filter()
+// let dub = [1, 1, 2, 3, 3, 4, 4]
+// let getUnique = dub.filter(i => i !== i)
+// console.log("Task.11 Output:", getPrime);
+
+//Task#12
+let eachProp = device.forEach((i) => i.Brand == "Dell")
+console.log("Task.12 Output:", eachProp);
+
+//Task#40
+// function hof (repfun, num) {
+//   function repfun(num) {
+//     let i =0;
+//     console.log(i+num);
+//   }
+//   return test(num)
+// }
+// function test() {
+//   num = num+num;
+// }
+
+function reapetOperation(fun , times) {
+  return function (number) {
+      let result = number;
+      for (let i  = 1; i <= times; i++) {
+          result = fun(result);
+      }
+      return result;
+  }
+}
+
+const addTwo = x => x + 2; // original function
+const addTwoFiveTimes = reapetOperation(addTwo,5);
+
+console.log(addTwoFiveTimes(0));
