@@ -24,6 +24,9 @@ class ElectricCar extends Car {
 //5
 class Account {
     #balance;
+    constructor(balance) {
+        this.#balance = balance;
+    }
     deposit() {
         console.log("You deposit to your balance successfully");
     }
@@ -31,7 +34,7 @@ class Account {
         console.log("Your balance has been withdrawn");
     }
     set setBalance (blnc) {
-        
+
     }
 }
 let x = new Account()
