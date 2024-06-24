@@ -2,7 +2,7 @@
 class Car {
     make;
     model;
-    constructor(Make, Model) {
+    constructor(Make, Model) {                  //3
         this.make = Make;
         this.model = Model;
     }
@@ -27,14 +27,15 @@ class Account {
     constructor(balance) {
         this.#balance = balance;
     }
-    deposit() {
-        console.log("You deposit to your balance successfully");
-    }
-    withdraw() {
-        console.log("Your balance has been withdrawn");
-    }
-    set setBalance (blnc) {
-
-    }
+ //6
+    // deposit() {
+    //     console.log("You deposit to your balance successfully");
+    // }
+    // withdraw() {
+    //     console.log("Your balance has been withdrawn");
+    // }
+    // set setBalance(blnc) {
+        
+    // }
 }
 let x = new Account()
