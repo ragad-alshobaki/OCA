@@ -1,11 +1,4 @@
 //1: Fetch and Display Posts
-
-// let x = fetch("https://jsonplaceholder.typicode.com/posts")
-// let response = x.then((response)=>{
-//     return response.json()
-// })
-// .then()
-
 let show = document.getElementById("showData1");
 const file = "https://jsonplaceholder.typicode.com/posts"
 fetch (file).then(show => show.json())
