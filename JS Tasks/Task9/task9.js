@@ -59,3 +59,16 @@ fetch(file4).then(show4 => show4.json())
     });
     show4.innerHTML = gallery;
 });
+
+//5: Fetch and Display To-Do Items
+let show5 = document.getElementById("showData5");
+const file5 = "https://jsonplaceholder.typicode.com/todos"
+fetch(file5).then(show5 => show5.json())
+.then(toDo => {
+    if (this.checkPoint === true) {
+        done => {
+            let completed = ""
+            done.then()
+        }        
+    }
+})
