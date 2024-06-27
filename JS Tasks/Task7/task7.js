@@ -53,15 +53,23 @@ let getPrime = n.filter(i => i % 2 === 1)
 console.log("Task.8 Output:", getPrime);
 
 //Task#9
-
+let bArr = [true, true, true, false, false]
+console.log("Task.9 Output:");
+let status = bArr.forEach((element, index) => {
+  console.log("Index:", index, ",", element);
+});
 
 //Task#10
 let getStr = n.map(i => i.toString())
 console.log("Task.10 Output:", getStr);
 
 //Task#11
-// let dub = [1, 1, 2, 3, 3, 4, 4]
-// let getUnique = dub.filter(i => i !== i)
+// let dub = [10, 10, 20, 30, 30, 40, 40, 50]
+// let getUnique = dub.filter(i => {
+//   if (i !== i) {
+//     console.log(i);
+//   }
+// } )
 // console.log("Task.11 Output:", getPrime);
 
 //Task#12
