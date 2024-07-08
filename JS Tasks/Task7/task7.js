@@ -64,13 +64,13 @@ let getStr = n.map(i => i.toString())
 console.log("Task.10 Output:", getStr);
 
 //Task#11
-// let dub = [10, 10, 20, 30, 30, 40, 40, 50]
-// let getUnique = dub.filter(i => {
-//   if (i !== i) {
-//     console.log(i);
-//   }
-// } )
-// console.log("Task.11 Output:", getPrime);
+let dub = [10, 10, 20, 30, 30, 40, 40, 50]
+let getUnique = dub.filter(i => {
+  if (i !== i) {
+    console.log(i);
+  }
+} )
+console.log("Task.11 Output:", getPrime);
 
 //Task#12
 let eachProp = device.forEach((i) => i.Brand == "Dell")
