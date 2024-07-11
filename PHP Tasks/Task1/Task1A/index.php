@@ -101,7 +101,8 @@ print_r(array_merge($fruits, $emps_age));
 echo "<br>";
 echo "======================================================== <br>";
 //      *** Need to check > ass. arr.***
-echo array_search("std_2", $stds);
+echo array_search(30, $emps_age);
+echo "<br>";
 echo array_search("mango", $fruits);
 echo "<br>";
 echo "======================================================== <br>";
