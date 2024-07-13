@@ -1,75 +1,114 @@
 <?php
-//======= Task #1 =======
-echo "<strong>=== Task#1 ====</strong> <br>";
-$a="rgd";
+//Task #1
+echo "<strong>======= Task#1 =======</strong> <br>";
+$a = "rgd";
 echo strtoupper($a) . "<br>";
 
-$b="Ragad";
+$b = "Ragad";
 echo strtolower($b) . "<br>";
  
-$c="hello";
+$c = "hello";
 echo ucfirst($c) . "<br>";
 
-$r="orange coding academy";
+$r = "orange coding academy";
 echo ucwords($r) . "<br>";
-echo "<hr>";
 
-//======= Task #2 =======
-echo "<strong>=== Task#2 ====</strong> <br>";
-// $time = 085119;
-// echo date("Y-m-d H:i:s", $time);
-$time="085119";
-echo explode("", $time);
+echo "<br>";
 
-//======= Task #3 =======
-$p = 'I am a full stack developer at orange coding academy';
+//Task #2
+echo "<strong>======= Task#2 =======</strong> <br>";
+$numStr = "085119";
+echo $toTime = substr($numStr, 0, 2) . ":" . substr($numStr, 2, 2) . ":" . substr($numStr, 4, 2) . "<br>";
 
-$word = "I am";
-$pos = strpos($p , $word);
+// function toTime($numStr){
+//     for ($i=0; $i < strlen($numStr); $i+=2) { 
+//         echo substr($numStr, $i, 2) . ":";                                   //check - no output
+//     }
+// }
 
-if ($pos !== false) {
-    echo " done";
+echo "<br>";
+
+//Task #3
+echo "<strong>======= Task#3 =======</strong> <br>";
+$t3 = 'I am a full stack developer at orange coding academy';
+$word = "Orange";
+$pos = strpos($t3 , $word);
+if ($pos == true) {
+    echo "Word Found! <br>";
 }else{
-    echo "not done";
+    echo "No search results found! <br>";
 }
 
-//======= Task #4 =======
- $URL ='www.orange.com/index.php';
- echo basename($URL);
+echo "<br>";
 
-//======= Task #5 =======
-$x='info@orange.com';
-     echo strstr($x, '@', true);
+//Task #4
+echo "<strong>======= Task#4 =======</strong> <br>";
+$URL ='www.orange.com/index.php';
+$file = "index.php";
+$t4Pos = strpos($URL , $file);
+echo $extract = substr($URL, $t4Pos) . "<br>";
+// echo basename($URL);
 
-// ============================================================task6=========================================
-$word ='info@orange.com';
-echo substr( $word,12,3);
-echo substr($word,-3);
+echo "<br>";
 
-// ============================================================task7======================================
-// !?
+//Task #5
+echo "<strong>======= Task#5 =======</strong> <br>";
+$mail='info@orange.com';
+echo strstr($mail, '@', true) . "<br>";
 
-// ===============================================================task8===================================
-// $a= 'That new trainee is so genius.';
-// $new= 'Our';
+echo "<br>";
 
-// $words = explode(' ', $a);///بتقسيم وبتخزن بمصفوفه
+//Task #6
+echo "<strong>======= Task#6 =======</strong> <br>";
+$t5 = strstr($mail, '.');
+echo str_replace(".", "", $t5) . "<br>";
+
+echo "<br>";
+
+//Task #7
+echo "<strong>======= Task#7 =======</strong> <br>";
+$str = "Orange_Coding_Academy";
+echo str_shuffle($str) . "<br>";
+
+echo "<br>";
+
+//Task #8
+echo "<strong>======= Task#8 =======</strong> <br>";
+$t8 = 'That new trainee is so genius.';
+$rep = 'Our';
+echo str_replace("That", "$rep", $t8) . "<br>";
+
+echo "<br>";
+
+//Task #9
+echo "<strong>======= Task#9 =======</strong> <br>";                        //Need to check - output warning
+// $String1 = 'dragonball';
+// $String2 = 'dragonboll';
+// $diff_char = strspn($String1, $String2);
+// echo "First difference between two strings at position $diff_char: $String1[$diff_char] vs $String2[$diff_char] ";
+
+echo "<br>";
+
+//Task #10
+echo "<strong>======= Task#10 =======</strong> <br>";
+$arStr = "Twinkle, twinkle, little star.";
+var_dump($arStr);
+
+echo "<br>";
 
 
-// $words[0] = $new;
 
-// $last= implode(' ', $words);// لدمج عناصر مصفوفة إلى سلسلة نصية واحدة، 
 
-                 
-// echo "$last";
 
-// // ==================================================================task9==================================
 
-// ! 
-// // ===================================================================== task 10================================
 
-// $string = "Twinkle, twinkle, little star.";
-// $newarray=explode(" " ,$string);
-// var_dump($newarray);
+//Task #13
+echo "<strong>======= Task#13 =======</strong> <br>";
+$t13 = '0000657022.24';
+echo trim($t13, '0') . "<br>";
 
-// ================================================================task 11 ================================
+echo "<br>";
+
+
+
+?>

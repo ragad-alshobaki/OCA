@@ -87,7 +87,7 @@ foreach ($products as $prod_k => $prod_v) {
 // print $i . $prod_v;
 // $k = array_keys($prod_v, $products);
 $k = array_search($prod_v, $products);
-echo "The most expensive product is: $k, it's price is: $prod_v";
+echo "The most expensive product is: $k, it's price: $prod_v ";
 
 // echo max($prodPrices);
 
@@ -101,25 +101,53 @@ $books = [
     ["title" => "Design Patterns: Elements of Reusable Object-Oriented Software", "author" => "Erich Gamma", "year" => 1994],
     ["title" => "The Art of Computer Programming", "author" => "Donald Knuth", "year" => 1968],
     ["title" => "The Clean Coder", "author" => "Robert Cecil", "year" => 2011]
-]
+];
+
+$filtered_books= [];
+foreach ($books as $book) {
+    // foreach ($book as $index) {
+        if ($book['year'] > 2010) {
+            // print_r($books);
+            $filtered_books = $book;
+            // array_push($filtered_books);
+        }    
+    // }
+    print_r($filtered_books);                       //Need to check - output
+}
+
+echo "<br>";
+echo "<br>";
+
+array_push($books, ["title" => "Data Science For Dummies", "author" => "Lillian Pierson", "year" => 2015]);
+print_r($books);
+
+echo "<br>";
+echo "<br>";
+
+foreach ($books as $book) {
+    if ($book['title'] = "clean code") {
+        $book['author'] = "R.c";
+        print_r($book);
+    }
+}                                                  //Need to check - output
+
+echo "<br>";
+echo "<br>";
+
+// foreach ($books as $key => $value) {
+//     asort($book);
+
+// }
+// print_r($book);
+
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+echo '<strong>======= Task.4 output: =======</strong><br><br>';
 
 
 
 
 
-// //string test
-// $str = "Orange Coding Academy";
-// echo "'Orange Coding Academy' has <b>" . strlen($str) . "</b> letters with spaces",     //1. String Length
-// " & has <b>" . str_word_count($str) . "</b> words";                                     //2. Word Count
-// echo "<br>";
-// echo strpos($str, "Academy");                                                           //3. string position
-// echo "<br>";
-// echo strtoupper($str);                                                                  //4. upper case
-// echo "<br>";
-// echo strtolower($str);                                                                  //5. lower case
-// echo "<br>";
-// echo str_replace("Orange", "Welcome to", $str);                                         //6.Replace string
-// echo "<br>";
-// echo strrev($str);                                                                       //7.Reverse string
-// echo "<br>";
 ?>
