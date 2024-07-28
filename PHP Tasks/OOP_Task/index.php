@@ -54,4 +54,6 @@ public function addCar($car){
 }
 }
 
+$invCar = new Inventory();
+
 $invCar -> addCar($car1);
