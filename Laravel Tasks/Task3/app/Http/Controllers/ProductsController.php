@@ -44,7 +44,7 @@ class ProductsController extends Controller
      */
     public function show(Products $products)
     {
-        return view('show', compact('product'));
+        return view('show', compact('products'));
     }
 
     /**
@@ -52,7 +52,7 @@ class ProductsController extends Controller
      */
     public function edit(Products $products)
     {
-        return view('edit', compact('product'));
+        return view('edit', compact('products'));
     }
 
     /**

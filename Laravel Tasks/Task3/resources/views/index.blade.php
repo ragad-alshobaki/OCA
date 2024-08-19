@@ -1,8 +1,10 @@
 @extends('layout')
 
 @section('content')
-    <h1>Products</h1>
-    <a href="{{ route('products.create') }}" class="btn btn-primary">Add Product</a>
+    <div>
+        <h1>Products</h1>
+        <a href="{{ route('products.create') }}" class="btn btn-primary">Add Product</a>
+    </div>
 
     @if (session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
@@ -24,6 +26,7 @@
                     <td>{{ $product->product_description }}</td>
                     <td>{{ $product->product_price }}</td>
                     <td>
+                        <a href="{{ route('products.show', $product) }}" class="btn btn-info">View</a>
                         <a href="{{ route('products.edit', $product) }}" class="btn btn-warning">Edit</a>
                         <form action="{{ route('products.destroy', $product) }}" method="POST" style="display:inline;">
                             @csrf
