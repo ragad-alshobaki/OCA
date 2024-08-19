@@ -5,7 +5,7 @@
   <div class="card-header">Movies Page</div>
   <div class="card-body">
       
-      <form action="{{ url('create') }}" method="post">
+      <form action="{{ url('movies') }}" method="post">
         {!! csrf_field() !!}
         <label>Movie Name:</label></br>
         <input type="text" name="name" id="name" class="form-control"></br>
