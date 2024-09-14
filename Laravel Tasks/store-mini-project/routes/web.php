@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LandingController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +30,6 @@ Route::get('/dashboard', function () {
     return view('dashboard.admin');
 });
 
-Route::get('/landing', function () {
-    return view('landing.landing');
-});
+// Route::get('/landing',[CategoryController::class,'index'] );
+
+Route::get('/landing',[LandingController::class,'index'] );

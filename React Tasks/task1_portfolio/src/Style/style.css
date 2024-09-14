@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.navList {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    text-decoration: none;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    width: 100vh;
+}
+.navp {
+    color: white;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+}
+/* body {
+    background-color: #EEEEEE;
+} */
+.mainsec {
+    display: flex;
+    justify-content: center;
+
+}
+.r_img {
+    height: 500px;
+    width: 500px;
+    margin-top: 200px;
+}
+.r_div {
+    margin-top: 300px;
+}
+/* #button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+#about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #EEEEEE;
+}
+/* h1 {
+    animation: 
+        typing 2s steps(18),
+        cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+@keyframes typing {
+    from {width: 0}
+} */
+.eduContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+#about,#education,#experiances,#skills,#cert,#refs,#contact, h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ADB5;    
+}
+/* #experiances {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+} */
+#education,#refs,#contact {
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin: 50px;
+    color: #393E46;
+}
+li {
+    color: #393E46;
+}
+.card_sec {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+.card {
+    width: 450px;
+    height: 520px;
+    text-align: center;
+}
+.c_img {
+    height: 200px;
+    width: 200px;
+}
+/* .lang_img {
+    height: 100px;
+    width: 100px;
+} */
+#experiances,#contact {
+    height: 100vh;
+}
+td {
+    width: 350px;
+    color: #393E46;
+}
+#cert {
+    height: 100vh;
+    background-color: #EEEEEE;
+}
+div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 350px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+  }
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: #393E46;
+  }
+#refs {
+    height: 100vh;
+}
+#mail_li {
+    color: #57A6A1;
+  }
+#no_li {
+    color: #E3651D;
+  }
+legend {
+    color: #EEEEEE;
+  }
+label {
+    color: #577B8D;
+  }
+fieldset {
+    /* border-width: 10px */
+}
+.align {
+    display: flex;
+    justify-content: center;
+    color: #EEEEEE;
+}
+.icon {
+    height: 35px;
+    width: 35px;
+}
+.align td {
+    width: auto;
+    color: #EEEEEE;
+}
