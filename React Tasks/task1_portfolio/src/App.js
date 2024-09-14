@@ -6,6 +6,9 @@ import HeroSection from './components/HeroSection';
 import About from './components/About';
 import Education from './components/Education';
 import Experiences from './components/Experiences';
+import Skills from './components/Skills';
+import Certificates from './components/Certificates';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
       <About />
       <Education />
       <Experiences />
+      <Skills />
+      <Certificates />
+      <Contact />
     </div>
   );
 }

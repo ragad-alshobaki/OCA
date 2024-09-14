@@ -13,7 +13,7 @@ export default function Header() {
                         <a href="#experiances" class="navp">Experiances</a>
                         <a href="#skills" class="navp">Skills</a>
                         <a href="#cert" class="navp">Certificates</a>
-                        <a href="#refs" class="navp">Reference</a>
+                        {/* <a href="#refs" class="navp">Reference</a> */}
                         <a href="#contact" class="navp">Contact</a>
                     </div>
                 </nav>

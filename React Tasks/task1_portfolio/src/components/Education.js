@@ -5,7 +5,7 @@ import ADC from '../images/ADC.png'
 export default function Education() {
     return(
         <section>
-            <h4 style={{padding: "40px"}}>Education</h4>
+            <h4 id="education" style={{padding: "40px"}}>Education</h4>
             <div className="eduContainer">
                 <div className="eduContainer car_div">
                     <div className="card" style={{textAlign: "center"}}>
