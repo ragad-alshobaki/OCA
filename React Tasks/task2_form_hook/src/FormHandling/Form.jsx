@@ -12,7 +12,7 @@ export default function Form() {
             <div className="form-wrap">
                 <h1>Sign Up</h1>
                 <p>It's free and only takes a minute</p>
-                <form onSubmit={(event)=>{event.preventDefault(); console.log("Welcom", formInputsValue.name, "your Email is:", formInputsValue.email)}}>
+                <form onSubmit={(event)=>{event.preventDefault(); alert("Welcom", formInputsValue.name, "your Email is:", formInputsValue.email); console.log("Welcom", formInputsValue.name, "your Email is:", formInputsValue.email)}}>
                     <div className="form-group">
                       <label htmlFor="first-name">User Name</label>
                       <input value={formInputsValue.name} onChange={(event)=>{setFormInput({name: event.target.value, email: formInputsValue.email})}} type="text" name="firstName" id="first-name" />
