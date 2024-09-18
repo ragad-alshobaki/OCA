@@ -1,0 +1,24 @@
+#container {
+    max-width: 525px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .form-wrap {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 5px;
+  }
+  .form-wrap h1,
+  .form-wrap p {
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .form-w {
+    margin: 2px;
+    background-color: lightgray;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border-color: #49c1a2;
+  }
